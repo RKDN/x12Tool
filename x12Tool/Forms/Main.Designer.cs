@@ -24,6 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,7 +38,6 @@
             this.configToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.EditorErrorSplitter = new System.Windows.Forms.SplitContainer();
-            this.x12View = new x12Tool.DoubleBufferedTreeView();
             this.errorList = new System.Windows.Forms.ListView();
             this.Segment = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.errorDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -47,6 +47,8 @@
             this.NameInfoText = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.logoBox = new System.Windows.Forms.PictureBox();
+            this.x12View = new x12Tool.DoubleBufferedTreeView();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -59,6 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.InfoContainer)).BeginInit();
             this.InfoContainer.Panel1.SuspendLayout();
             this.InfoContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -182,6 +185,7 @@
             // 
             // EditorErrorSplitter.Panel1
             // 
+            this.EditorErrorSplitter.Panel1.Controls.Add(this.logoBox);
             this.EditorErrorSplitter.Panel1.Controls.Add(this.x12View);
             // 
             // EditorErrorSplitter.Panel2
@@ -191,25 +195,6 @@
             this.EditorErrorSplitter.Size = new System.Drawing.Size(762, 541);
             this.EditorErrorSplitter.SplitterDistance = 365;
             this.EditorErrorSplitter.TabIndex = 5;
-            // 
-            // x12View
-            // 
-            this.x12View.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(45)))));
-            this.x12View.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.x12View.DrawMode = System.Windows.Forms.TreeViewDrawMode.OwnerDrawText;
-            this.x12View.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.x12View.FullRowSelect = true;
-            this.x12View.HideSelection = false;
-            this.x12View.Location = new System.Drawing.Point(0, 0);
-            this.x12View.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
-            this.x12View.Name = "x12View";
-            this.x12View.ShowPlusMinus = false;
-            this.x12View.ShowRootLines = false;
-            this.x12View.Size = new System.Drawing.Size(762, 541);
-            this.x12View.TabIndex = 4;
-            this.x12View.DrawNode += new System.Windows.Forms.DrawTreeNodeEventHandler(this.x12View_DrawNode);
-            this.x12View.MouseClick += new System.Windows.Forms.MouseEventHandler(this.x12View_MouseClick);
-            this.x12View.MouseUp += new System.Windows.Forms.MouseEventHandler(this.x12View_MouseUp);
             // 
             // errorList
             // 
@@ -304,6 +289,36 @@
             this.progressBar.Size = new System.Drawing.Size(1028, 2);
             this.progressBar.TabIndex = 8;
             // 
+            // logoBox
+            // 
+            this.logoBox.BackColor = System.Drawing.Color.Transparent;
+            this.logoBox.BackgroundImage = global::x12Tool.Properties.Resources.X12ToolLogo_Alt;
+            this.logoBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logoBox.Location = new System.Drawing.Point(12, 432);
+            this.logoBox.Name = "logoBox";
+            this.logoBox.Size = new System.Drawing.Size(119, 97);
+            this.logoBox.TabIndex = 5;
+            this.logoBox.TabStop = false;
+            // 
+            // x12View
+            // 
+            this.x12View.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(45)))));
+            this.x12View.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.x12View.DrawMode = System.Windows.Forms.TreeViewDrawMode.OwnerDrawText;
+            this.x12View.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.x12View.FullRowSelect = true;
+            this.x12View.HideSelection = false;
+            this.x12View.Location = new System.Drawing.Point(0, 0);
+            this.x12View.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
+            this.x12View.Name = "x12View";
+            this.x12View.ShowPlusMinus = false;
+            this.x12View.ShowRootLines = false;
+            this.x12View.Size = new System.Drawing.Size(762, 541);
+            this.x12View.TabIndex = 4;
+            this.x12View.DrawNode += new System.Windows.Forms.DrawTreeNodeEventHandler(this.x12View_DrawNode);
+            this.x12View.MouseClick += new System.Windows.Forms.MouseEventHandler(this.x12View_MouseClick);
+            this.x12View.MouseUp += new System.Windows.Forms.MouseEventHandler(this.x12View_MouseUp);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -313,9 +328,9 @@
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
-            this.ShowIcon = false;
             this.Text = "X12Tool";
             this.Load += new System.EventHandler(this.Main_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -332,6 +347,7 @@
             this.InfoContainer.Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InfoContainer)).EndInit();
             this.InfoContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.logoBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,6 +378,7 @@
         private System.Windows.Forms.ToolStripMenuItem replaceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configToolStripMenuItem1;
         private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.PictureBox logoBox;
     }
 }
 

@@ -44,3 +44,30 @@ C:\Users\RKDN\Desktop\EDIReader\x12_template\obj\Release\x12Tool.csproj.CoreComp
 C:\Users\RKDN\Desktop\EDIReader\x12_template\obj\Release\x12Tool.csproj.CopyComplete
 C:\Users\RKDN\Desktop\EDIReader\x12_template\obj\Release\X12Tool.exe
 C:\Users\RKDN\Desktop\EDIReader\x12_template\obj\Release\X12Tool.pdb
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\Definitions\Segments.def
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\FormatFiles\820-005010X218.xml
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\FormatFiles\835.xml
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\FormatFiles\837-005010X223.xml
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\FormatFiles\837-005010X222.xml
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\Images\loop.png
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\Images\segment.png
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\Images\selected.png
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\Images\X12ToolIcon.png
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\Images\X12ToolLogo-Alt.png
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\Images\X12ToolLogo.png
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\X12Tool.exe.config
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\X12Tool.exe
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\X12Tool.pdb
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\EDIReader.dll
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\Faker.dll
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\bin\Release\EDIReader.pdb
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\obj\Release\x12Tool.csprojAssemblyReference.cache
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\obj\Release\x12Tool.ConfigMenu.resources
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\obj\Release\x12Tool.Main.resources
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\obj\Release\x12Tool.ReplaceDialog.resources
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\obj\Release\x12Tool.Properties.Resources.resources
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\obj\Release\x12Tool.csproj.GenerateResource.cache
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\obj\Release\x12Tool.csproj.CoreCompileInputs.cache
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\obj\Release\x12Tool.csproj.CopyComplete
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\obj\Release\X12Tool.exe
+C:\Users\RKDN\Documents\Visual Studio 2017\Projects\EDIReader\x12Tool\x12Tool\obj\Release\X12Tool.pdb

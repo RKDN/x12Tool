@@ -20,7 +20,7 @@ namespace x12Tool {
 
         public Main(string[] args) {
             InitializeComponent();
-
+           
             ApplyConfig();
 
             SegmentDef = new Dictionary<string, string>();
@@ -43,6 +43,7 @@ namespace x12Tool {
         }
 
         public void ApplyConfig() {
+            logoBox.BackColor = GLOBALS.Config.Values.EditorBackgroundColor;
             x12View.BackColor = GLOBALS.Config.Values.EditorBackgroundColor;
             x12View.ForeColor = GLOBALS.Config.Values.EditorForegroundColor;
             x12View.Font = GLOBALS.Config.Values.EditorFont;
@@ -191,6 +192,7 @@ namespace x12Tool {
 
         private void DisplayX12() {
             x12View.Nodes.Clear();
+            logoBox.Visible = false;
             var thread = new Thread(() => {
                 var t = new System.Diagnostics.Stopwatch();
                 t.Start();

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FormatGuide>
+  <Loop id='ST' name='837P Transaction Set Header'>
+    <Segment id='BHT' name='Beginning of Hierarchial Transaction' usage='R' repeat='1' />
+    <Loop name='Submitter Name' id='NM1' s1='41' loopid='1000A' usage='R' repeat='1'>
+      <Segment id='PER' s1='IC' name='Submitter EDI Contact Information' usage='R' repeat='2' />
+    </Loop>
+    <Loop name='Receiver Name' id='NM1' s1='40' loopid='1000B' usage='R' repeat='1' />
+    <HLoop name='BilingProvider' id='HL' level='20' loopid='2000A' usage='R' repeat='-1'>
+      <Segment id='PRV' name='Billing Provider Specialty Information' s1='BI' usage='S' repeat='1' />
+      <Segment id='CUR' name='Foreign Currency Information' s1='85' usage='S' repeat='1' />
+      <Loop name='Billing Provider Name' id='NM1' s1='85' loopid='2010AA' usage='R' repeat='1'>
+        <Segment id='N3' name='Billing Provider Address' usage='R' repeat='1' />
+        <Segment id='N4' name='Billing Provider City, State, Zip Code' usage='R' repeat='1' />
+        <Segment id='REF' name='Billing Provider Tax Identification' s1='EI:SY' usage='R' repeat='1' />
+        <Segment id='REF' name='Billing Provider UPIN/License Information' s1='0B:1G' usage='S' repeat='2' />
+        <Segment id='PER' name='Billing Provider Contact Information' s1='IC' usage='S' repeat='2' />
+      </Loop>
+      <Loop name='Pay To Address Name' id='NM1' s1='87' loopid='2010AB' usage='S' repeat='1'>
+        <Segment id='N3' name='Pay-to Address - Address' usage='R' repeat='1' />
+        <Segment id='N4' name='Pay-to Address City, State, Zip Code' usage='R' repeat='1' />
+      </Loop>
+      <Loop name='Pay To Plan Name' id='NM1' s1='PE' loopid='2010AC' usage='S' repeat='1'>
+        <Segment id='N3' name='Pay-to Plan - Address' usage='R' repeat='1' />
+        <Segment id='N4' name='Pay-to Plan City, State, Zip Code' usage='R' repeat='1' />
+        <Segment id='REF' name='Pay-to Plan Secondary Identification' s1='2U:FY:NF' usage='S' repeat='1' />
+      </Loop>
+      <HLoop name='Subscriber Hierarchial Level' id='HL' level='22' loopid='2000B' usage='R' repeat='-1'>
+        <Segment id='SBR' name='Subscriber Information' usage='R' repeat='1' s1='A:B:C:D:E:F:G:H:P:S:T:U' />
+        <Segment id='PAT' name='Patient Information' usage='S' repeat='1'/>
+        <Loop name='Subscriber Name' id='NM1' s1='IL' loopid='2010BA' usage='R' repeat='1'>
+          <Segment id='N3' name='Subscriber Address' usage='S' repeat='1' />
+          <Segment id='N4' name='Subscriber City, State, Zip Code' usage='R' repeat='1'/>
+          <Segment id='DMG' name='Subscriber Demographic Information' usage='S' repeat='1' s1='D8'/>
+          <Segment id='REF' name='Subscriber Secondary Identification' usage='S' repeat='1' s1='SY'/>
+          <Segment id='REF' name='Property and Casualty Claim Number' usage='S' repeat='1' s1='Y4'/>
+          <Segment id='PER' name='Property and Casualty Subscriber Contact Information' usage='S' repeat='1' s1='IC'/>
+        </Loop>
+        <Loop name='Payer Name' id='NM1' s1='PR' loopid='2010BB' usage='R' repeat='1'>
+          <Segment id='N3' name='Payer Address' usage='S' repeat='1'/>
+          <Segment id='N4' name='Payer City, State, Zip Code' usage='R' repeat='1'/>
+          <Segment id='REF' name='Payer Secondary Identification' usage='S' repeat='3' s1='2U:EI:FY:NF'/>
+          <Segment id='REF' name='Billing Provider Secondary Identification' usage='S' repeat='2' s1='G2:LU'/>
+        </Loop>
+        <HLoop name='Patient Hierarchial Level' id='HL' level='23' loopid='2000C' usage='S' repeat='-1'>
+          <Segment id='PAT' name='Patient Information' usage='R' repeat='1' s1='01:19:20:21:39:40:53:G8'/>
+          <Loop name='Patient Name' id='NM1' s1='QC' loopid='2010CA' usage='R' repeat='1'>
+            <Segment id='N3' name='Patient Address' usage='R' repeat='1' />
+            <Segment id='N4' name='Patient City, State, Zip Code' usage='R' repeat='1' />
+            <Segment id='REF' name='Property and Casualty Claim Number' usage='S' repeat='1' s1='Y4'/>
+            <Segment id='DMG' name='Patient Demographic Information' usage='R' repeat='1' s1='D8'/>
+            <Segment id='PER' name='Property and Casualty Patient Contact Information' usage='S' repeat='1' s1='IC'/>
+          </Loop>
+        </HLoop>
+        <Loop name='Claim Information' id='CLM' loopid='2300' usage='R' repeat='100'>
+          <Segment id='DTP' name='Date - Onset of Current Illness or Symptom' usage='S' repeat='1' s1='431'/>
+          <Segment id='DTP' name='Date - Initial Treatment Date' usage='S' repeat='1' s1='454'/>
+          <Segment id='DTP' name='Date - Last Seen Date' usage='S' repeat='1' s1='304'/>
+          <Segment id='DTP' name='Date - Acute Manifestation' usage='S' repeat='1' s1='453'/>
+          <Segment id='DTP' name='Date - Accident' usage='S' repeat='1' s1='439'/>
+          <Segment id='DTP' name='Date - Last Menstrual Period' usage='S' repeat='1' s1='484'/>
+          <Segment id='DTP' name='Date - Last X-Ray Date' usage='S' repeat='1' s1='455'/>
+          <Segment id='DTP' name='Date - Hearing and Vision Prescription Date' usage='S' repeat='1' s1='471'/>
+          <Segment id='DTP' name='Date - Disability Dates' usage='S' repeat='1' s1='314:360:361'/>
+          <Segment id='DTP' name='Date - Last Worked' usage='S' repeat='1' s1='297'/>
+          <Segment id='DTP' name='Date - Authorized Return to Work' usage='S' repeat='1' s1='296'/>
+          <Segment id='DTP' name='Date - Admission' usage='S' repeat='1' s1='435'/>
+          <Segment id='DTP' name='Date - Discharge' usage='S' repeat='1' s1='096'/>
+          <Segment id='DTP' name='Date - Assumed and Relinquished Care Dates' usage='S' repeat='2' s1='090:091'/>
+          <Segment id='DTP' name='Date - Property and Casualty Date of First Contact' usage='S' repeat='1' s1='444'/>
+          <Segment id='DTP' name='Date - Repricer Received Date' usage='S' repeat='1' s1='050'/>
+          <Segment id='PWK' name='Claim Supplemental Information' usage='S' repeat='10' s1='03:05:06:07:08:09:10:11:13:15:21:A3:A4:AM:AS:B2:B3:B4:BR:BS:BT:CB:CK:CT:D2:DA:DB:DG:DJ:DS:EB:HC:HR:I5:IR:LA:M1:MT:NN:OB:OC:OD:OE:OX:OZ:P4:P5:PE:PN:PO:PQ:PY:PZ:RB:RR:RT:RX:SG:V5:XP'/>
+          <Segment id='CN1' name='Contract Information' usage='S' repeat='1' s1='01:02:03:04:05:06:09'/>
+          <Segment id='AMT' name='Patient Amount Paid' usage='S' repeat='1' s1='F5'/>
+          <Segment id='REF' name='Service Authorization Exception Code' usage='S' repeat='1' s1='4N'/>
+          <Segment id='REF' name='Mandatory Medicare(Section 4081) Crossover Indicator' usage='S' repeat='1' s1='F5'/>
+          <Segment id='REF' name='Mammography Certification Number' usage='S' repeat='1' s1='EW'/>
+          <Segment id='REF' name='Referral Number' usage='S' repeat='1' s1='9F'/>
+          <Segment id='REF' name='Prior Authorization' usage='S' repeat='1' s1='G1'/>
+          <Segment id='REF' name='Payer Claim Control Number' usage='S' repeat='1' s1='F8'/>
+          <Segment id='REF' name='Clinical Laboratory Improvement Amendment (CLIA) Number' usage='S' repeat='1' s1='X4'/>
+          <Segment id='REF' name='Repriced Claim Number' usage='S' repeat='1' s1='9A'/>
+          <Segment id='REF' name='Adjusted Repriced Claim Number' usage='S' repeat='1' s1='9C'/>
+          <Segment id='REF' name='Investigational Device Exemption Number' usage='S' repeat='1' s1='LX'/>
+          <Segment id='REF' name='Claim Identifier For Transmission Intermediaries' usage='S' repeat='1' s1='D9'/>
+          <Segment id='REF' name='Medical Record Number' usage='S' repeat='1' s1='EA'/>
+          <Segment id='REF' name='Demonstration Project Identifier' usage='S' repeat='1' s1='P4'/>
+          <Segment id='REF' name='Care Plan Oversight' usage='S' repeat='1' s1='IJ'/>
+          <Segment id='K3'  name='File Information' usage='S' repeat='10'/>
+          <Segment id='NTE' name='Claim Note' usage='S' repeat='1' s1='ADD:CER:DCP:DGN:TPO' />
+          <Segment id='CR1' name='Ambulance Transport Information' usage='S' repeat='1' s1='LB'/>
+          <Segment id='CR2' name='Spinal Manipulation Service Information' usage='S' repeat='1' />
+          <Segment id='CRC' name='Ambulance Certification' usage='S' repeat='3' s1='07'/>
+          <Segment id='CRC' name='Patient Condition Information Vision' usage='S' repeat='3' s1='E1:E2:E3'/>
+          <Segment id='CRC' name='Homebound Indicator' usage='S' repeat='1' s1='75'/>
+          <Segment id='CRC' name='EPSDT Referral' usage='S' repeat='1' s1='ZZ'/>
+          <Segment id='HI'  name='Health Care Information Codes' usage='R' repeat='-1' />
+          <Segment id='HCP' name='Claim Pricing/Repricing Information' usage='S' repeat='1' s1='00:01:02:03:04:05:06:07:08:09:10:11:12:13:14'/>
+          <Loop name='Referring Provider Name' id='NM1' s1='DN' loopid='2310A' usage='S' repeat='2'>
+            <Segment id='REF' name='Referring Provider Secondary Identification' usage='S' repeat='3' s1='0B:1G:G2'/>
+          </Loop>
+          <Loop name='Rendering Provider Name' id='NM1' s1='82' loopid='2310B' usage='S' repeat='1'>
+            <Segment id='PRV' name='Rendering Provider Specialty Information' usage='S' repeat='1' s1='PE'/>
+            <Segment id='REF' name='Rendering Provider Secondary Identification' usage='S' repeat='4' s1='0B:1G:G2:LU'/>
+          </Loop>
+          <Loop name='Service Facility Location' id='NM1' s1='77' loopid='2310C' usage='S' repeat='1'>
+            <Segment id='N3' name='Service Facility Location Address' usage='R' repeat='1' />
+            <Segment id='N4' name='Service Facility Location City, State, Zip Code' usage='R' repeat='1' />
+            <Segment id='REF' name='Service Facility Location Secondary Identification' usage='S' repeat='3' s1='0B:G2:LU' />
+            <Segment id='PER' name='Service Facility Contact Information' usage='S' repeat='1' s1='IC'/>
+          </Loop>
+          <Loop name='Supervising Provider Name' id='NM1' s1='82' loopid='2310D' usage='S' repeat='1'>
+            <Segment id='REF' name='Supervising Provider Secondary Identification' usage='S' repeat='4' s1='0B:1G:G2:LU'/>
+          </Loop>
+          <Loop name='Ambulance Pick-up Location' id='NM1' s1='PW' loopid='2310E' usage='S' repeat='1'>
+            <Segment id='N3' name='Ambulance Pick-up Location Address' usage='R' repeat='1' />
+            <Segment id='N4' name='Ambulance Pick-up Location City, State, Zip Code' usage='R' repeat='1' />
+          </Loop>
+          <Loop name='Ambulance Drop-off Location' id='NM1' s1='45' loopid='2310F' usage='S' repeat='1'>
+            <Segment id='N3' name='Ambulance Drop-off Location Address' usage='R' repeat='1' />
+            <Segment id='N4' name='Ambulance Drop-off Location City, State, Zip Code' usage='R' repeat='1' />
+          </Loop>
+          <Loop name='Other Subscriber Information' id='SBR' loopid='2320' usage='S' repeat='10' s1='A:B:C:D:E:F:G:H:P:S:T:U'>
+            <Segment id='CAS' name='Claim Level Adjustments' usage='S' repeat='5' s1='CO:CR:OA:PI:PR' />
+            <Segment id='AMT' name='Coordination of Benefits (COB) Payer Paid Amount' usage='S' repeat='1' s1='D' />
+            <Segment id='AMT' name='Coordination of Benefits (COB) Total Non-Covered Amount' usage='S' repeat='1' s1='A8' />
+            <Segment id='AMT' name='Remaining Patient Liability' usage='S' repeat='1' s1='EAF' />
+            <Segment id='OI'  name='Other Insurance Coverage Information' usage='R' repeat='1' />
+            <Segment id='MOA' name='Outpatient Adjudication Information' usage='S' repeat='1' />
+            <Loop name='Other Subscriber Name' id='NM1' s1='IL' loopid='2330A' usage='R' repeat='1'>
+              <Segment id='N3' name='Other Subscriber Address' usage='S' repeat='1' />
+              <Segment id='N4' name='Other Subscriber City, State, Zip Code' usage='R' repeat='1' />
+              <Segment id='REF' name='Other Subscriber Secondary Identification' usage='S' repeat='1' s1='SY' />
+            </Loop>
+            <Loop name='Other Payer Name' id='NM1' s1='PR' loopid='2330B' usage='R' repeat='1'>
+              <Segment id='N3' name='Other Payer Address' usage='S' repeat='1' />
+              <Segment id='N4' name='Other Payer City, State, Zip Code' usage='R' repeat='1' />
+              <Segment id='DTP' name='Claim Check or Remittance Date' usage='S' repeat='1' s1='573' />
+              <Segment id='REF' name='Other Payer Secondary Identification' usage='S' repeat='2' s1='2U:EI:FY:NF'/>
+              <Segment id='REF' name='Other Payer Prior Authorization Number' usage='S' repeat='1' s1='G1'/>
+              <Segment id='REF' name='Other Payer Referral Number' usage='S' repeat='1' s1='9F'/>
+              <Segment id='REF' name='Other Payer Claim Adjustment Number' usage='S' repeat='1' s1='T4'/>
+              <Segment id='REF' name='Other Payer Claim Control Number' usage='S' repeat='1' s1='F8'/>
+            </Loop>
+            <Loop name='Other Payer Referring Provider' id='NM1' s1='DN' loopid='2330C' usage='S' repeat='2'>
+              <Segment id='REF' name='Other Payer Referring Provider Secondary Identification' usage='R' repeat='3' s1='0B:1G:G2'/>
+            </Loop>
+            <Loop name='Other Payer Rendering Provider' id='NM1' s1='82' loopid='2330D' usage='S' repeat='1'>
+              <Segment id='REF' name='Other Payer Rendering Provider Secondary Identification' usage='R' repeat='1' s1='0B:1G:G2:LU'/>
+            </Loop>
+            <Loop name='Other Payer Service Facility Location' id='NM1' s1='77' loopid='2330E' usage='S' repeat='1' >
+              <Segment id='REF' name='Other Payer Service Facility Location Secondary Identification' usage='R' repeat='3' s1='0B:G2:LU' />
+            </Loop>
+            <Loop name='Other Payer Supervising Provider' id='NM1' s1='DQ' loopid='2330F' usage='S' repeat='1' >
+              <Segment id='REF' name='Other Payer Supervising Provider Secondary Identification' usage='R' repeat='3' s1='0B:1G:G2:LU'/>
+            </Loop>
+            <Loop name='Other Payer Billing Provider' id='NM1' s1='85' loopid='2330G' usage='S' repeat='1'>
+              <Segment id='REF' name='Other Payer Biling Provider Secondary Identification' usage='R' repeat='2' s1='G2:LU' />
+            </Loop>
+          </Loop>
+          <Loop name='Service Line Number' id='LX' loopid='2400' usage='R' repeat='50'>
+            <Segment id='SV1' name='Professional Service' usage='R' repeat='1' />
+            <Segment id='SV5' name='Durable Medical Equipment Service' usage='S' repeat='1' />
+            <Segment id='PWK' name='Line Supplemental Information' usage='S' repeat='10' s1='03:05:06:07:08:09:10:11:13:15:21:A3:A4:AM:AS:B2:B3:B4:BR:BS:BT:CB:CK:CT:D2:DA:DB:DG:DJ:DS:EB:HC:HR:I5:IR:LA:M1:MT:NN:OB:OC:OD:OE:OX:OZ:P4:P5:PE:PN:PO:PQ:PY:PZ:RB:RR:RT:RX:SG:V5:XP' />
+            <Segment id='PWK' name='Durable Medical Equipment Certificate of Medical Necessity Indicator' usage='S' repeat='1' s1='CT' />
+            <Segment id='CR1' name='Ambulance Transport Information' usage='S' repeat='1' s1='LB'/>
+            <Segment id='CR3' name='Durable Medical Equipment Certification' usage='S' repeat='1' s1='I:R:S' />
+            <Segment id='CRC' name='Ambulance Certification' usage='S' repeat='1' s1='07'/>
+            <Segment id='CRC' name='Hospice Employee Indicator' usage='S' repeat='1' s1='70'/>
+            <Segment id='CRC' name='Condition Indicator/Durable Medical Equipment' usage='S' repeat='1' s1='09'/>
+            <Segment id='DTP' name='Date - Service Date' usage='R' repeat='1' s1='472' />
+            <Segment id='DTP' name='Date - Prescription Date' usage='S' repeat='1' s1='471' />
+            <Segment id='DTP' name='Date - Certification Revision/Recertification Date' usage='S' repeat='1' s1='607' />
+            <Segment id='DTP' name='Date - Begin Therapy Date' usage='S' repeat='1' s1='463' />
+            <Segment id='DTP' name='Date - Last Certification Date' usage='S' repeat='1' s1='461' />
+            <Segment id='DTP' name='Date - Last Seen Date' usage='S' repeat='1' s1='304' />
+            <Segment id='DTP' name='Date - Test Date' usage='S' repeat='2' s1='738:739' />
+            <Segment id='DTP' name='Date - Shipped Date' usage='S' repeat='1' s1='011' />
+            <Segment id='DTP' name='Date - Last X-Ray Date' usage='S' repeat='1' s1='455' />
+            <Segment id='DTP' name='Date - Initial Treatment Date' usage='S' repeat='1' s1='454' />
+            <Segment id='QTY' name='Ambulance Patient Count' usage='S' repeat='1' s1='PT'/>
+            <Segment id='QTY' name='Obstetric Anesthesia Additional Units' usage='S' repeat='1' s1='FL'/>
+            <Segment id='MEA' name='Test Result' usage='S' repeat='5' s1='TR:OG'/>
+            <Segment id='CN1' name='Contract Information' usage='S' repeat='1' s1='01:02:03:04:05:06:09'/>
+            <Segment id='REF' name='Repriced Line Item Reference Number' usage='S' repeat='1' s1='9B'/>
+            <Segment id='REF' name='Adjusted Repriced Line Item Reference Number' usage='S' repeat='1' s1='9D'/>
+            <Segment id='REF' name='Prior Authorization' usage='S' repeat='5' s1='G1'/>
+            <Segment id='REF' name='Line Item Control Number' usage='S' repeat='1' s1='6R'/>
+            <Segment id='REF' name='Mammography Certification Number' usage='S' repeat='1' s1='EW'/>
+            <Segment id='REF' name='Clinical Laboratory Improvement Amendment (CLIA) Number' usage='S' repeat='1' s1='X4'/>
+            <Segment id='REF' name='Referring Clinical Laboratory Improvement Amendment (CLIA) Facility Identification' usage='S' repeat='1' s1='F4'/>
+            <Segment id='REF' name='Immunization Batch Number' usage='S' repeat='1' s1='BT'/>
+            <Segment id='REF' name='Referral Number' usage='S' repeat='5' s1='9F'/>
+            <Segment id='AMT' name='Sales Tax Amount' usage='S' repeat='1' s1='T'/>
+            <Segment id='AMT' name='Postage Claimed Amount' usage='S' repeat='1' s1='F4'/>
+            <Segment id='K3'  name='File Information' usage='S' repeat='10' />
+            <Segment id='NTE' name='Line Note' usage='S' repeat='1' s1='ADD:DCP'/>
+            <Segment id='NTE' name='Third Party Organization Notes' usage='S' repeat='1' s1='TPO'/>
+            <Segment id='PS1' name='Purchased Service Information' usage='S' repeat='1' />
+            <Segment id='HCP' name='Line Pricing/Repricing Information' usage='S' repeat='1' s1='00:01:02:03:04:05:06:07:08:09:10:11:12:13:14'/>
+            <Loop name='Drug Identification' id='LIN' loopid='2410' usage='S' repeat='1' >
+              <Segment id='CTP' name='Drug Quantity' usage='R' repeat='1' />
+              <Segment id='REF' name='Prescription or Compound Drug Association Number' usage='S' repeat='1' s1='VY:XZ'/>
+            </Loop>
+            <Loop name='Rendering Provider Name' id='NM1' s1='82' loopid='2420A' usage='S' repeat='1'>
+              <Segment id='REF' name='Rendering Provider Specialty Information' usage='S' repeat='1' s1='PE'/>
+              <Segment id='REF' name='Rendering Provider Secondary Identification' usage='S' repeat='20' s1='0B:1G:G2:LU'/>
+            </Loop>
+            <Loop name='Purchased Service Provider Name' id='NM1' s1='QB' loopid='2420B' usage='S' repeat='1'>
+              <Segment id='REF' name='Purchased Service Provider Secondary Identification' usage='S' repeat='20' s1='0B:1G:G2'/>
+            </Loop>
+            <Loop name='Service Facility Location Name' id='NM1' s1='77' loopid='2420C' usage='S' repeat='1'>
+              <Segment id='N3' name='Service Facilily Location Address' usage='R' repeat='1' />
+              <Segment id='N4' name='Service Facility Location City, State, Zip Code' usage='R' repeat='1' />
+              <Segment id='REF' name='Service Facility Location Secondary Identification' usage='S' repeat='3' s1='G2:LU'/>
+            </Loop>
+            <Loop name='Supervising Provider Name' id='NM1' s1='DQ' loopid='2420D' usage='S' repeat='1'>
+              <Segment id='REF' name='Supervising Provider Secondary Identification' usage='S' repeat='20' s1='0B:1G:G2:LU'/>
+            </Loop>
+            <Loop name='Ordering Provider Name' id='NM1' s1='DK' loopid='2420E' usage='S' repeat='1'>
+              <Segment id='N3' name='Ordering Provider Address' usage='S' repeat='1' />
+              <Segment id='N4' name='Ordering Provider City, State, Zip Code' usage='R' repeat='1'/>
+              <Segment id='REF' name='Ordering Provider Secondary Identification' usage='S' repeat='20' s1='0B:1G:G2'/>
+              <Segment id='PER' name='Ordering Provider Contact Inforamtion' usage='S' repeat='1' s1='IC'/>
+            </Loop>
+            <Loop name='Referring Provider Name' id='NM1' s1='DN' loopid='2420F' usage='S' repeat='2'>
+              <Segment id='REF' name='Referring Provider Secondary Identification' usage='S' repeat='20' s1='0B:1G:G2'/>
+            </Loop>
+            <Loop name='Ambulance Pick-up Location' id='NM1' s1='PW' loopid='2420G' usage='S' repeat='1'>
+              <Segment id='N3' name='Ambulance Pick-up Location Address' usage='R' repeat='1' />
+              <Segment id='N4' name='Ambulance Pick-up Location City, State, Zip Code' usage='R' repeat='1'/>
+            </Loop>
+            <Loop name='Ambulance Drop-off Location' id='NM1' s1='45' loopid='2420H' usage='S' repeat='1'>
+              <Segment id='N3' name='Ambulance Drop-off Location Address' usage='R' repeat='1' />
+              <Segment id='N4' name='Ambulance Drop-off Location City, State, Zip Code' usage='R' repeat='1'/>
+            </Loop>
+            <Loop name='Line Adjudication Information' id='SVD' loopid='2430' usage='S' repeat='15'>
+              <Segment id='CAS' name='Line Adjustment' usage='S' repeat='5' s1='CO:CR:OA:PI:PR'/>
+              <Segment id='DTP' name='Line Check or Remittance Date' usage='R' repeat='1' s1='573'/>
+              <Segment id='AMT' name='Remaining Patient Liability' usage='S' repeat='1' s1='EAF'/>
+            </Loop>
+            <Loop name='Form Identification Code' id='LQ' loopid='2440' usage='S' repeat='1' s1='AS:UT'>
+              <Segment id='FRM' name='Supporting Documentation' usage='R' repeat='99'/>
+            </Loop>
+          </Loop>
+        </Loop>
+      </HLoop>
+    </HLoop>
+    <Loop id='SE' usage='R' />
+  </Loop>
+</FormatGuide>

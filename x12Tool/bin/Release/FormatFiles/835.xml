@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FormatGuide>
+  <Loop name='835 Transaction Set Header' id='ST'>
+    <Segment name='Financial Information' id='BPR' s1='C:D:H:I:P:U:X' usage='R' repeat='1'/>
+    <Segment name='Reassociation Trace Number' id='TRN' s1='1' usage='R' repeat='1'/>
+    <Segment name='Foreign Currency Information' id='CUR' s1='PR' usage='S' repeat='1'/>
+    <Segment name='Receiver Identification' id='REF' s1='EV' usage='S' repeat='1'/>
+    <Segment name='Version Identification' id='REF' s1='F2' usage='S' repeat='1'/>
+    <Segment name='Production Date' id='DTM' s1='405' usage='S' repeat='1'/>
+    <Loop name='Payer Identification' id='N1' s1='PR' loopid='1000A' usage='R' repeat='1'>
+      <Segment name='Payer Address' id='N3' usage='R' repeat='1'/>
+      <Segment name='Payer City, State, ZIP Code' id='N4' usage='R' repeat='1'/>
+      <Segment name='Additional Payer Identification' id='REF' s1='2U:EO:HI:NF' usage='S' repeat='4'/>
+      <Segment name='Payer Business Contact Information' id='PER' s1='CX' usage='S' repeat='1'/>
+      <Segment name='Payer Technical Contact Information' id='PER' s1='BL' usage='R' repeat='-1'/>
+      <Segment name='Payer WEB Site' id='PER' s1='IC' usage='S' repeat='1'/>
+    </Loop>
+    <Loop name='Payee Identification' id='N1' s1='PE' loopid='1000B' usage='R' repeat='1'>
+      <Segment name='Payee Address' id='N3' usage='S' repeat='1'/>
+      <Segment name='Payee City, State, ZIP Code' id='N4' usage='R' repeat='1'/>
+      <Segment name='Payee Additional Identification' id='REF' s1='0B:D3:PQ:TJ' usage='S' repeat='1'/>
+      <Segment name='Remittance Delivery Method' id='RDM' s1='BM:EM:FT:OL' usage='S' repeat='1'/>
+    </Loop>
+    <Loop name='Header Number' id='LX' loopid='2000' usage='S' repeat='-1'>
+      <Segment name='Provider Summary Information' id='TS3' usage='S' repeat='1'/>
+      <Segment name='Provider Supplemental Summary Information' id='TS2' usage='S' repeat='1'/>
+      <Loop name='Claim Payment Information' id='CLP' loopid='2100' usage='R' repeat='-1'>
+        <Segment name='Claim Adjustment' id='CAS' s1='CO:OA:PI:PR' usage='S' repeat='99'/>
+        <Loop name='Patient Name' id='NM1' s1='QC' usage='R' repeat='1'/>
+        <Loop name='Insured Name' id='NM1' s1='IL' usage='S' repeat='1'/>
+        <Loop name='Corrected Patient/Insured Name' id='NM1' s1='74' usage='S' repeat='1'/>
+        <Loop name='Service Provider Name' id='NM1' s1='82' usage='S' repeat='1'/>
+        <Loop name='Crossover Carrier Name' id='NM1' s1='TT' usage='S' repeat='1'/>
+        <Loop name='Corrected Priority Payer Name' id='NM1' s1='PR' usage='S' repeat='1'/>
+        <Loop name='Other Subscriber Name' id='NM1' s1='GB' usage='S' repeat='1'/>
+        <Segment name='Inpatient Adjudication Information' id='MIA' usage='S' repeat='1'/>
+        <Segment name='Outpatient Adjudication Information' id='MOA' usage='S' repat='1'/>
+        <Segment name='Other Claim Related Identification' id='REF' s1='IL:1W:28:6P:9A:9C:BB:CE:EA:F8:G1:G3:IG:SY' usage='S' repeat='5'/>
+        <Segment name='Rendering Provider Identification' id='REF' s1='0B:1A:1B:1C:1D:1G:1H:1J:D3:G2:LU' usage='S' repeat='10'/>
+        <Segment name='Statement From or To Date' id='DTM' s1='232:233' usage='S' repeat='2'/>
+        <Segment name='Coverage Expiration Date' id='DTM' s1='036' usage='S' repeat='1'/>
+        <Segment name='Claim Received Date' id='DTM' s1='050' usage='S' repeat='1'/>
+        <Segment name='Claim Contact Information' id='PER' s1='CX' usage='S' repeat='2'/>
+        <Segment name='Claim Supplemental Information' id='AMT' s1='AU:D8:DY:F5:I:NL:T:T2:ZK:ZL:ZM:ZN:ZO' usage='S' repeat='13'/>
+        <Segment name='Claim Supplemental Information Quantity' id='QTY' s1='CA:CD:LA:LE:NE:NR:OU:PS:VS:ZK:ZL:ZM:ZN:ZO' usage='S' repeat='14'/>
+        <Loop name='Service Payment Information' id='SVC' loopid='2110' usage='S' repeat='-1'>
+          <Segment name='Service Date' id='DTM' s1='150:151:472' usage='S' repeat='2'/>
+          <Segment name='Service Adjustment' id='CAS' s1='CO:OA:PI:PR' usage='S' repeat='99'/>
+          <Segment name='Service Identification' id='REF' s1='1S:APC:BB:E9:G1:G3:LU:RB' usage='S' repeat='8'/>
+          <Segment name='Line Item Control Number' id='REF' s1='6R' usage='S' repeat='1'/>
+          <Segment name='Rendering Provider Information' id='REF' s1='0B:1A:1B:1C:1D:1G:1H:1J:D3:G2:HPI:SY:TJ' usage='S' repeat='10'/>
+          <Segment name='HealthCare Policy Identification' id='REF' s1='0K' usage='S' repeat='5'/>
+          <Segment name='Service Supplemental Amount' id='AMT' s1='B6:KH:T:T2:ZK:ZL:ZM:ZN:ZO' usage='S' repeat='9'/>
+          <Segment name='Service Supplemental Quantity' id='QTY' s1='ZK:ZL:ZM:ZN:ZO' usage='S' repeat='6'/>
+          <Segment name='Health Care Remark Codes' id='LQ'  s1='HE:RX' usage='S' repeat='99'/>
+        </Loop>
+      </Loop>
+    </Loop>
+    <Segment name='Provider Adjustment' id='PLB' usage='S' repeat='-1'/>
+    <Loop name ='Transaction Set Trailer' id='SE' usage='R'/>
+  </Loop>
+</FormatGuide>

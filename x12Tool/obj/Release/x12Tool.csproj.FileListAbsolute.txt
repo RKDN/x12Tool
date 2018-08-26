@@ -1,0 +1,46 @@
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\obj\Release\x12Tool.Main.resources
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\obj\Release\x12Tool.csproj.GenerateResource.Cache
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\obj\Release\X12Tool.exe
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\bin\Release\Images\loop.png
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\bin\Release\Images\segment.png
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\bin\Release\Images\selected.png
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\bin\Release\X12Tool.exe.config
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\bin\Release\X12Tool.exe
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\bin\Release\X12Tool.pdb
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\bin\Release\EDIReader.dll
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\bin\Release\EDIReader.pdb
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\obj\Release\X12Tool.pdb
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\obj\Release\x12Tool.csprojResolveAssemblyReference.cache
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\obj\Release\x12Tool.Properties.Resources.resources
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\bin\Release\Definitions\Segments.def
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\bin\Release\FormatFiles\837-005010X223.xml
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\bin\Release\FormatFiles\837-005010X222.xml
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\bin\Release\FormatFiles\835.xml
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\bin\Release\FormatFiles\820-005010X218.xml
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\x12_template\obj\Release\x12Tool.ReplaceDialog.resources
+C:\Users\dcv3016\Documents\Visual Studio 2012\Projects\EDIReader\x12_template\bin\Release\Faker.dll
+C:\Users\dcv3016\Documents\Visual Studio 2012\Projects\EDIReader\x12_template\obj\Release\x12Tool.ConfigMenu.resources
+C:\Users\RKDN\Desktop\EDIReader\x12_template\bin\Release\Definitions\Segments.def
+C:\Users\RKDN\Desktop\EDIReader\x12_template\bin\Release\FormatFiles\820-005010X218.xml
+C:\Users\RKDN\Desktop\EDIReader\x12_template\bin\Release\FormatFiles\835.xml
+C:\Users\RKDN\Desktop\EDIReader\x12_template\bin\Release\FormatFiles\837-005010X223.xml
+C:\Users\RKDN\Desktop\EDIReader\x12_template\bin\Release\FormatFiles\837-005010X222.xml
+C:\Users\RKDN\Desktop\EDIReader\x12_template\bin\Release\Images\loop.png
+C:\Users\RKDN\Desktop\EDIReader\x12_template\bin\Release\Images\segment.png
+C:\Users\RKDN\Desktop\EDIReader\x12_template\bin\Release\Images\selected.png
+C:\Users\RKDN\Desktop\EDIReader\x12_template\bin\Release\X12Tool.exe.config
+C:\Users\RKDN\Desktop\EDIReader\x12_template\bin\Release\X12Tool.exe
+C:\Users\RKDN\Desktop\EDIReader\x12_template\bin\Release\X12Tool.pdb
+C:\Users\RKDN\Desktop\EDIReader\x12_template\bin\Release\EDIReader.dll
+C:\Users\RKDN\Desktop\EDIReader\x12_template\bin\Release\Faker.dll
+C:\Users\RKDN\Desktop\EDIReader\x12_template\bin\Release\EDIReader.pdb
+C:\Users\RKDN\Desktop\EDIReader\x12_template\obj\Release\x12Tool.csprojAssemblyReference.cache
+C:\Users\RKDN\Desktop\EDIReader\x12_template\obj\Release\x12Tool.ConfigMenu.resources
+C:\Users\RKDN\Desktop\EDIReader\x12_template\obj\Release\x12Tool.Main.resources
+C:\Users\RKDN\Desktop\EDIReader\x12_template\obj\Release\x12Tool.ReplaceDialog.resources
+C:\Users\RKDN\Desktop\EDIReader\x12_template\obj\Release\x12Tool.Properties.Resources.resources
+C:\Users\RKDN\Desktop\EDIReader\x12_template\obj\Release\x12Tool.csproj.GenerateResource.cache
+C:\Users\RKDN\Desktop\EDIReader\x12_template\obj\Release\x12Tool.csproj.CoreCompileInputs.cache
+C:\Users\RKDN\Desktop\EDIReader\x12_template\obj\Release\x12Tool.csproj.CopyComplete
+C:\Users\RKDN\Desktop\EDIReader\x12_template\obj\Release\X12Tool.exe
+C:\Users\RKDN\Desktop\EDIReader\x12_template\obj\Release\X12Tool.pdb

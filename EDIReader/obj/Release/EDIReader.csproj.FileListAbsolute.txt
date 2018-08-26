@@ -1,0 +1,11 @@
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\EDIReader\bin\Release\EDIReader.pdb
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\EDIReader\obj\Release\EDIReader.dll
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\EDIReader\obj\Release\EDIReader.pdb
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\EDIReader\obj\Release\EDIReader.csprojResolveAssemblyReference.cache
+C:\Users\dcv3016\Documents\Visual Studio 2012\Projects\EDIReader\EDIReader\bin\Release\EDIReader.dll
+C:\Users\RKDN\Desktop\EDIReader\EDIReader\bin\Release\EDIReader.dll
+C:\Users\RKDN\Desktop\EDIReader\EDIReader\bin\Release\EDIReader.pdb
+C:\Users\RKDN\Desktop\EDIReader\EDIReader\obj\Release\EDIReader.csprojAssemblyReference.cache
+C:\Users\RKDN\Desktop\EDIReader\EDIReader\obj\Release\EDIReader.csproj.CoreCompileInputs.cache
+C:\Users\RKDN\Desktop\EDIReader\EDIReader\obj\Release\EDIReader.dll
+C:\Users\RKDN\Desktop\EDIReader\EDIReader\obj\Release\EDIReader.pdb

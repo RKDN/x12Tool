@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDIReader", "EDIReader\EDIReader.csproj", "{5D358FB2-2BC2-4112-854B-83DA150C5566}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "x12Tool", "x12Tool\x12Tool.csproj", "{ECB13F6E-5688-4AE7-BA53-4155111A5512}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D358FB2-2BC2-4112-854B-83DA150C5566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D358FB2-2BC2-4112-854B-83DA150C5566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D358FB2-2BC2-4112-854B-83DA150C5566}.Debug|x64.ActiveCfg = Debug|x64
+		{5D358FB2-2BC2-4112-854B-83DA150C5566}.Debug|x64.Build.0 = Debug|x64
+		{5D358FB2-2BC2-4112-854B-83DA150C5566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D358FB2-2BC2-4112-854B-83DA150C5566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D358FB2-2BC2-4112-854B-83DA150C5566}.Release|x64.ActiveCfg = Release|x64
+		{5D358FB2-2BC2-4112-854B-83DA150C5566}.Release|x64.Build.0 = Release|x64
+		{ECB13F6E-5688-4AE7-BA53-4155111A5512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB13F6E-5688-4AE7-BA53-4155111A5512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB13F6E-5688-4AE7-BA53-4155111A5512}.Debug|x64.ActiveCfg = Debug|x64
+		{ECB13F6E-5688-4AE7-BA53-4155111A5512}.Debug|x64.Build.0 = Debug|x64
+		{ECB13F6E-5688-4AE7-BA53-4155111A5512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB13F6E-5688-4AE7-BA53-4155111A5512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECB13F6E-5688-4AE7-BA53-4155111A5512}.Release|x64.ActiveCfg = Release|x64
+		{ECB13F6E-5688-4AE7-BA53-4155111A5512}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0883F1B-01A5-4DB0-B214-C91EF1BEDA32}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

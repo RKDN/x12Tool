@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FormatGuide>
+  <Loop id='ST' name='820'>
+    <Segment id='BPR' name='Financial Information' usage='R' repeat='1' s1='C:D:I:P:U:X' />
+    <Segment id='TRN' name='Reassociation Trace Number' usage='R' repeat='1' s1='1:3'/>
+    <Segment id='CUR' name='Foreign Currency Information' usage='S' repeat='1' s1='2B:PR'/>
+    <Segment id='REF' name='Premium Receivers Identification Key' usage='S' repeat='-1' s1='14:17:18:2F:38:72:LB' />
+    <Segment id='DTM' name='Process Date' usage='S' repeat='1' s1='009'/>
+    <Segment id='DTM' name='Delivery Date' usage='S' repeat='1' s1='035'/>
+    <Segment id='DTM' name='Coverage Period' usage='S' repeat='1' s1='582'/>
+    <Segment id='DTM' name='Creation Date' usage='S' repeat='1' s1='097'/>
+    <Loop id='N1' name='Premium Receiver Name' usage='R' repeat='1' s1='PE' loopid='1000A' >
+      <Segment id='N2' name='Premium Receiver Additional Name' usage='S' repeat='1'/>
+      <Segment id='N3' name='Premium Receiver Address' usage='S' repeat='1' />
+      <Segment id='N4' name='Premium Receiver City, State, Zip Code' usage='S' repeat='1'/>
+      <Segment id='RDM' name='Premium Receiver Remittance Delivery Method' usage='S' repeat='1' s1='BM:EM:FT:FX:IA:OL'/>
+    </Loop>
+    <Loop id='N1' name='Premium Payer Name' usage='R' repeat='1' s1='PR' loopid='1000B'>
+      <Segment id='N2' name='Premium Payer Additional Name' usage='S' repeat='1' />
+      <Segment id='N3' name='Premium Payer Address' usage='S' repeat='1' />
+      <Segment id='N4' name='Premium Payer City, State, Zip Code' usage='S' repeat='1' />
+      <Segment id='PER' name='Premium Payer Administrative Contact' usage='S' repeat='-1' />
+    </Loop>
+    <Loop id='N1' name='Intermediary Bank Information' usage='S' repeat='1' s1='04:0B:8W:AK:BE:BK:C1:C2:IAT:MJ:RB:Z6:ZB:ZL' loopid='1000C'>
+      <Segment id='N2' name='Intermediary Bank Additional Name' usage='S' repeat='1' />
+      <Segment id='N3' name='Intermediary Bank Address' usage='S' repeat='1' />
+      <Segment id='N4' name='Intermediary Bank City, State, Zip Code' usage='S' repeat='1'/>
+      <Segment id='PER' name='Intermediary Bank Administrative Contact' usage='S' repeat='-1' s1='IC'/>
+    </Loop>
+    <Loop id='ENT' name='Organization Summary Remittance' usage='S' repeat='1' s2='2L:AG:NH:RGA:UN' loopid='2000A'>
+      <Loop id='ADX' name='Organization Summary Remittance Level Adjustment for Previous Payment' usage='S' repeat='-1' loopid='2200A'/>
+      <Loop id='RMR' name='Organization Summary Remittance Detail' usage='R' repeat='-1' s1='11:1L:CT:IK' loopid='2300A'>
+        <Segment id='REF' name='Reference Information' usage='S' repeat='-1' s1='14:17:18:2F:38:E9:LB:LU:ZZ'/>
+        <Segment id='DTM' name='Organizational Coverage Period' usage='S' repeat='1' s1='582:AAG'/>
+        <Loop id='IT1' name='Summary Line Item' usage='S' repeat='1' loopid='2310A'>
+          <Loop id='SAC' name='Service, Promotion, Allowance, or Charge Information' usage='S' repeat='4' s1='C' loopid='2312A'/>
+          <Loop id='SLN' name='Member Count' usage='S' repeat='3' loopid='2315A'/>
+        </Loop>
+        <Loop id='ADX' name='Organization Summary Remittance Level Adjustment for Current Payment' usage='S' repeat='-1' loopid='2320A'/>
+      </Loop>
+    </Loop>
+    <Loop id='ENT' name='Individual Remittance' usage='S' repeat='-1' s2='2J' loopid='2000B'>
+      <Loop id='NM1' name='Individual Name' usage='S' repeat='-1' s1='DO:EY:IL:QE' loopid='2100B'/>
+      <Loop id='ADX' name='Individual Premium Adjustment for Previous Payment' usage='S' repeat='-1' loopid='2200B'/>
+      <Loop id='RMR' name='Individual Preium Remittance Detail' usage='R' repeat='-1' s1='11:9J:AZ:B7:CT:ID:IG:IK:KW' loopid='2300B'>
+        <Segment id='REF' name='Reference Information' usage='S' repeat='-1' s1='14:18:2F:38:E9:LU:ZZ'/>
+        <Segment id='DTM' name='Individual Coverage Period' usage='S' repeat='1' s1='582:AAG'/>
+        <Loop id='ADX' name='Individual Premium Adjustment for Current Payment' usage='S' repeat='-1' loopid='2320B'/>
+      </Loop>
+    </Loop>
+    <Loop id='SE' usage='R' />
+  </Loop>
+</FormatGuide>

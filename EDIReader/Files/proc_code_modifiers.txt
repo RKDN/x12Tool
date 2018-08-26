@@ -1,0 +1,276 @@
+21|Prolonged Evaluation and Management Services (Deleted, please use CPT 99354- 99359)
+22|Unusual Procedural Services
+23|Unusual Anesthesia
+24|Unrelated Evaluation and Management Service by the Same Physician during a Postoperative Period
+25|Significant, Separately Identifiable Evaluation and Management Service by the Same Physician on the Same Day of the Procedure or Other Service
+26|Professional Component 
+27|Multiple Outpatient Hospital E/M Encounters on the Same Date. 
+29|Global procedures, those procedures where one provider is responsible for both the professional and technical component. This modifier has been deleted. If a provider is billing for a global service, no modifier is necessary.
+32|Mandated Services
+33|Preventive Service
+47|Anesthesia by Surgeon
+50|Bilateral Procedure
+51|Multiple Procedures
+52|Reduced Services 
+53|Discontinued Procedure
+54|Surgical Care Only
+55|Postoperative Management Only
+56|Preoperative Management Only
+57|Decision for Surgery
+58|Staged or Related Procedure or Service by the Same Physician During the Postoperative Period
+59|Distinct Procedural Service
+62|Two Surgeons
+63|Procedure Performed on Infants less than 4kg
+66|Surgical Team
+73|Discontinued Outpatient Hospital/Ambulatory Surgery Center (ASC) Procedure prior to the Administration of Anesthesia
+74|Discontinued Outpatient Hospital/Ambulatory Surgery Center (ASC) Procedure after Administration of Anesthesia
+76|Repeat Procedure by Same Physician
+77|Repeat Procedure by Another Physician
+78|Return to the Operating Room for a Related Procedure During the Postoperative Period
+79|Unrelated Procedure or Service by the Same Physician During the Postoperative Period
+80|Assistant Surgeon
+81|Minimum Assistant Surgeon
+82|Assistant Surgeon (when qualified resident surgeon not available)
+90|Reference (Outside) Laboratory
+91|Repeat Clinical Diagnostic Laboratory Test
+92|Alternative Laboratory Platform Testing
+99|Multiple Modifiers
+AA|Anesthesia services personally performed by anesthesiologist. 
+AD|Medical supervision by a physician: More than 4 concurrent anesthesia procedures.
+AE|Registered Dietician
+AF|Specialty Physician
+AG|Primary Physician
+AH|Clinical Psychologist
+AI|Principal Physician of Record
+AJ|Clinical Social Worker
+AK|Non Participating Physician
+AM|Physician, team member service
+AP|Determination of refractive state was not performed in the course of diagnostic ophthalmological examination.
+AQ|Service performed in a Health Professional Shortage Area
+AR|Physician providing services in a physician scarcity area
+AS|Physician Assistant, Nurse Practitioner, or Clinical Nurse Specialist services for assistant-at-surgery, non-team member.
+AT|Acute treatment (chiropractic claims) - This modifier should be used when reporting CPT codes 98940, 98941, 98942 or 98943 for acute treatment.
+AU|Item furnished in conjunction with a urological, ostomy, or tracheostomy supply
+AV|Item furnished in conjunction with a prosthetic device, prosthetic or orthotic
+AW|Item furnished in conjunction with a surgical dressing
+AX|Item furnished in conjunction with dialysis services
+AY|Item or service furnished to an ESRD patient that is not for the treatment of ERSD
+AZ|Physician providing a service in a dental Health Professional Shortage Area for the purpose of an Electronic Health Record Incentive Payment
+A1|Dressing for one wound
+A2|Dressing for two wounds
+A3|Dressing for three wounds
+A4|Dressing for four wounds
+A5|Dressing for five wounds
+A6|Dressing for six wounds
+A7|Dressing for seven wounds
+A8|Dressing for eight wounds
+A9|Dressing for nine or more wounds
+BA|Item furnished in conjunction with parenteral enteral nutrition (PEN) services
+BL|Special Acquisition of blood and blood products
+CA|Procedure payable only in the inpatient setting when performed emergently on an outpatient who expires prior to admission.
+CB|Services ordered by a dialysis facility physician as part of the ESRD beneficiary's dialysis benefit.
+CC|Procedure code change- CARRIER USE ONLY - Used by carrier to indicate that the procedure code submitted was changed either for administrative reasons or because an incorrect code was filed. 
+CD|AMCC test has been ordered by an ESRD facility or MCP physician that is part of the composite rate and is not separately billable.
+CE|AMCC tests has been ordered by an ESRD facility or MCP physician that is a composite rate test but is beyond the normal frequency covered under the rate and is separately reimbursable based on medical necessity.
+CF|AMCC tests has been ordered by an ESRD facility or MCP physician that is not part of the composite rate and is separately billable.
+CH|0 percent impaired, limited or restricted
+CI|At least 1 percent but less than 20 percent impaired, limited or restricted 
+CJ|At least 20 percent but less than 40 percent impaired, limited or restricted 
+CK|At least 40 percent but less than 60 percent impaired, limited or restricted  
+CL|At least 60 percent but less than 80 percent impaired, limited or restricted  
+CM|At least 80 percent but less than 100 percent impaired, limited or restricted
+CN|100 percent impaired, limited or restricted  
+CR|Catastrophe/Disaster Related
+CS|Item or service related, in whole or in part, to an illness, injury, or condition that was caused by or exacerbated by the effects, direct or indirect, of the 2010 oil spill in the Gulf of Mexico, including but not limited to subsequent clean-up activities.
+DA|Oral health assessment by a licensed Health Professional other than a dentist
+EA|Erythropetic stimulating agent (ESA) administered to treat anemia due to anti-cancer chemotherapy.
+EB|Erythropetic stimulating agent (ESA) administered to treat anemia due to anti-cancer radiotherapy.
+EC|Erythropetic stimulating agent (ESA) administered to treat anemia not due to anti-cancer radiotherapy or anti-cancer chemotherapy.
+ED|Hematocrit level has exceeded 39% (or Hemoglobin level has exceeded 13.0 G/DL) for 3 or more consecutive billing cycles immediately prior to and including the current cycle
+EE|Hematocrit level has not exceeded 39% (or Hemoglobin level has not exceeded 13.0 G/DL) for 3 or more consecutive billing cycles immediately prior to and including the current cycle.
+E1|Upper left, eyelid
+E2|Lower left, eyelid
+E3|Upper right, eyelid
+E4|Lower right, eyelid
+EJ|Subsequent claims for a defined course of therapy, e.g., EPO, sodium hyaluronate, infliximab.
+EM|Emergency reserve supply (for ESRD benefit only)
+ET|Emergency treatment - Use to designate a dental procedure performed in an emergency situation.
+FA|Left hand, thumb
+F1|Left hand, second digit
+F2|Left hand, third digit
+F3|Left hand, fourth digit
+F4|Left hand, fifth digit
+F5|Right hand, thumb
+F6|Right hand, second digit
+F7|Right hand, third digit
+F8|Right hand, fourth digit
+F9|Right hand, fifth digit
+FB|Item provided without cost to provider, supplier or practitioner, or credit received for replaced device (examples, but not limited to covered under warranty, replaced due to defect, free samples)
+FC|Partial credit received for replaced device
+G1|Most recent URR of less than 60%
+G2|Most recent URR of 60% to 64.9%
+G3|Most recent URR of 65% to 69.9%
+G4|Most recent URR of 70% to 74.9%
+G5|Most recent URR of 75% or greater
+G6|ESRD patient for whom less than seven dialysis sessions have been provided in a month.
+G7|Pregnancy resulted from rape or incest or pregnancy certified by physician as life threatening
+GA|Waiver of liability statement on file - Use to indicate that the physician's office has a signed advance notice retained in the patient's medical record.The notice is for services that may be denied by Medicare.
+GC|This service has been performed in part by a resident under the direction of a teaching physician.
+GD|Units of service exceeds medically unlikely edit value and represents reasonable and necessary services.
+GE|This service has been performed by a resident without the presence of a teaching physician under the primary care exception.
+GF|Physician services provided by a nonphysician in a critical access hospital; nonphysician: NP, Certified Registered Nurse Anesthetist (CRNA), Certified Registered Nurse (CRN), CNS or PA
+GG|Diagnostic Mammography - Use to indicated performance and payment of a screening mammography and diagnostic mammography on same patient, on the same day.
+GH|Diagnostic mammogram converted from screening mammogram on same day
+GJ|Opted Out physician or practitioner - Use to indicate services performed in an emergency or urgent service.
+GM|Multiple patients on one ambulance trip
+GN|Services delivered under an outpatient speech language pathology plan of care.
+GO|Services delivered under an outpatient occupational therapy plan of care.
+GP|Services delivered under an outpatient physical therapy plan of care.
+GQ|Telehealth services via asynchronous telecommunications system
+GR|This service was performed in whole or in part by a resident in a department of Veterans Affairs Medical Center or clinic supervised in accordance with VA policy.
+GS|Dosage of EPO or Darbepoietin Alfa has been reduced and maintained in response to hematocrit or hemoglobin level.
+GT|Telehealth services via interactive audio and video telecommunication systems
+GU|Waiver of liability statement issued as required by a payer policy, routine notice
+GV|Attending physician not employed or paid under agreement by the patient's hospice provider.
+GW|Service not related to the hospice patient's terminal condition.
+GY|Use to indicate when an item or service statutorily excluded or does not meet the definition of any Medicare benefit.
+GZ|Use to indicate when an item or service expected to be denied as not reasonable and necessary.Used when no Advanced Beneficiary Notice (ABN) signed by the beneficiary.
+HM|Less than Bachelor’s degree level
+HN|Bachelor’s degree level
+HO|Master’s degree level
+HP|Doctoral level
+HQ|Group setting (for behavioral health use)
+HT|Multidisciplinary team (for behavioral health use)
+H9|Court-ordered
+HU|Funded by child welfare agency
+HV|Funded state addictions agency
+HW|Funded by state mental health agency
+HX|Funded by county/local agency
+HY|Funded by juvenile justice agency
+HZ|Funded by criminal justice agency
+J1|Competitive Acquisition Program, no-pay submission for a prescription number
+J2|Competitive Acquisition Program, restocking of emergency drugs after emergency administration
+J3|Competitive Acquisition Program, (CAP) drug not available through CAP as written, reimburse under ASP Methodology
+JA|Administered intravenously
+JB|Administered subcutaneoulsly
+JC|Skin substitute used as a graft
+JD|Skin substitute NOT used as a graft
+JW|Drug or biological amount discarded/not administered to any patient
+KB|Beneficiary requested upgrade for ABN, more than 4 modifiers identified on claim 
+KC|Replacement of special power wheelchair interface
+KD|Drug or Biological infused through implanted DME
+KE|Bid under round one of the DMEPOS competitive bidding program for use with non-competitive bid base equipment
+KF|Item designated by FDA as Class III device
+KL|DMEPOS Item Delivered via Mail 
+KM|Replacement of facial prosthesis - including new impression/moulage
+KN|Replacement of facial prosthesis - Using previous master model
+KR|Rental item, durable medical equipment – billing for partial month 
+KX|Specific required documentation on file (used for DMERC providers)
+KZ|New Coverage not implemented by managed care
+LC|Left circumflex coronary artery
+LD|Left anterior descending coronary artery
+LM|Left main coronary artery (Effective for the year 2013) 
+LR|Laboratory Round Trip.
+LT|Left Side - Used to identify procedures performed on the left side of the body.
+M2|Medicare Secondary Payer
+NB|Nebulizer system, any type, FDA-Cleared fo ruse with specific drug
+NU|New equipment (DME)
+P1|A normal healthy patient
+P2|A patient with mild systemic disease
+P3|A patient with severe systemic disease
+P4|A patient with severe systemic disease that is a constant threat to life
+P5|A moribund patient who is not expected to survive without the operation
+P6|A declared brain-dead patient whose organs are being removed for donor purposes 
+PA|Surgery Wrong Body Part
+PB|Surgery Wrong Patient
+PC|Wrong Surgery on Patient
+PD|Diagnostic or related non-diagnostic item or service provided in a wholly owned or wholly operated entity to a patient who is admitted as an inpatient within 3 days, or 1 day. (New modifier for the year 2012, Check for Usage and reimbursement)
+PI|PET Tumor init tx strategy
+PS|PET Tumor subsq tx strategy
+PT|Colorectal cancer screening test; converted to diagnostic test or other procedure
+PO|Services, procedures and/or surgeries provided at off-campus provider-based outpatient departments
+Q0|Investigational clinical service provided in a clinical research study that is in an approved clinical research study.
+Q1|Routine clinical service provided in a clinical research study that is in an approved clinical research study.
+Q3|Liver Kidney Donor Surgery and Related Services.
+Q4|Service for ordering/referring physician qualifies as a service exemption -
+Q5|Service furnished by a substitute physician under a reciprocal billing arrangement
+Q6|Service furnished by a locum tenens physician
+Q7|One CLASS A finding
+Q8|Two CLASS B findings
+Q9|One CLASS B and two CLASS C findings
+QA|FDA Investigational device exemption (IDE) - The IDE project number must be included on the claim when modifier QA is billed.
+QB|Physician service in a rural HPSA.
+QC|Single channel monitoring.
+QD|Recording and storage in solid state memory by a digital recorder.
+QJ|Services/items provided to a prisoner or patient in state or local custody, however the state or local government, as applicable, meets the requirements in 42 CFR 411.4 (B)
+QK|Medical direction of 2, 3 or 4 concurrent anesthesia procedures involving qualified individuals.
+QL|Patient pronounced dead after ambulance called
+QM|Ambulance service provided under arrangement by a provider of services
+QN|Ambulance service furnished directly by a provider of services
+QP|Panel test - Documentation is on file showing that the laboratory test(s) was ordered individually or ordered as a CPT-recognized panel other than automated profile codes.
+QS|Monitored anesthesia care
+QT|Recording and storage on tape by an analog tape recorder.
+QU|Physician service in an urban HPSA.
+QV|Item or service provided as routine care in a medical qualifying clinical trial
+QW|CLIA Waived Test - Effective October 1, 1996, all new waived tests are being assigned a CPT code (in lieu of a temporary five-digit G- or Q-code).
+QX|CRNA service with medical direction by physician.
+QY|Medical direction of one certified registered nurse anesthetist (CRNA) by an anesthesiologist.
+QZ|CRNA service without medical direction by a physician.
+RA|Replacement of a DME item, Orthotic or Prosthetic Item.
+RB|Replacement of a Part of DME, Orthotic or Prosthetic Item furnished as Part of a Repair
+RC|Right coronary artery
+RD|Drug provided to beneficiary, but not, administrated incident-to
+RE|Furnished in full compliance with FDA-Mandated Risk Evaluation and Mitigation Strategy (REMS)
+RI|Ramus intermedius (Effective for the year 2013) 
+RP|Replacement and repair
+RT|Right Side - Used to identify procedures performed on the right side of the body. 
+RR|Rental (use the RR modifier when DME is a rental)
+SB|NP (for use by midwives only) 
+SC|Medically necessary service or supply (w.e.f Jan 1, 2012)
+SF|Second opinion ordered by a Professional Review Organization (PRO) per section 9401, P.L. 99-272 (100 % reimbursement – no Medicare deductible or coinsurance)
+SG|Ambulatory Surgical Center (ASC) modifier 
+SH|Second concurrently administered infusion therapy
+SJ|Third or more concurrently administered infusion therapy 
+SK|Member of high risk population (Use only with codes for immunization)
+SS|Home infusion services provided in the infusion suite of the IV therapy provider
+SW|Services provided by a certified diabetes educator
+TA|Left foot, great toe
+T1|Left foot, second digit
+T2|Left foot, third digit
+T3|Left foot, fourth digit
+T4|Left foot, fifth digit
+T5|Right foot, great toe
+T6|Right foot, second digit
+T7|Right foot, third digit
+T8|Right foot, fourth digit
+T9|Right foot, fifth digit
+TC|Technical component only - Use to indicate the technical part of a diagnostic procedure performed.
+TD|Registered Nurse (RN) (for behavioral health use)
+TE|Licensed Practical Nurse (LPN) (for behavioral health use)
+TJ|Child/Adolescent Program GP:  To be used for enhancement payment for foster care children screening exams.  
+TK|Extra member or passenger, nonambulance transportation 
+TR|School-based individualized education program services provided outside the public school district responsible for the student
+TS|Follow-up service
+UE|Used durable medical equipment
+UN|Portable X-ray Modifiers; two patients
+UP|Portable X-ray Modifiers; three patients
+UQ|Portable X-ray Modifiers; four patients
+UR|Portable X-ray Modifiers; five patients
+US|Portable X-ray Modifiers; six patients 
+V1|Level of MMI for Treating Doctor - This modifier would be added to the "Work related or medical disability examination by the treating physician..." CPT code 99455 when the office visit level of service is equal to a "minimal" level. 
+V2|Level of MMI for Treating Doctor - This modifier would be added to the "Work related or medical disability examination by the treating physician..." CPT code 99455 when the office visit level of service is equal to "self limited or minor" level. 
+V3|Level of MMI for Treating Doctor - This modifier would be added to the "Work related or medical disability examination by the treating physician..." CPT code 99455 when the office visit level of service is equal to "low to moderate" level. 
+V4|Level of MMI for Treating Doctor - This modifier would be added to the "Work related or medical disability examination by the treating physician..." CPT code 99455 when the office visit level of service is equal to "moderate to high severity" level and of at least 25 minutes duration. 
+V5|Level of MMI for Treating Doctor - This modifier would be added to the "Work related or medical disability examination by the treating physician..." CPT code 99455 when the office visit level of service is equal to "moderate to high severity" level and of at least 45 minutes duration.
+V5|Any Vascular Catheter (alone or with any other vascular access) - Part A only modifier
+V6|Arteriovenous Graft (or other vascular access not including a vascular catheter) - Part A only modifier
+V7|Afteriovenous Fistula (or other vascular access not including a vascular catheter) - Part A only modifier
+V8|Dialysis related infection present during the billing month - Part A only modifier
+V9|No dialysis related infection present during the billing month - Part A only modifier
+VR|Review report - This modifier shall be added to the "Work related or medical disability examination by the treating physician..." CPT code 99455 to indicate that the service was the treating doctor's review of report(s) only. 
+XE|Separate Encounter, A Service That Is Distinct Because It Occurred During A Separate Encounter, 
+XS|Separate Structure, A Service That Is Distinct Because It Was Performed On A Separate Organ/Structure, 
+XP|Separate Practitioner, A Service That Is Distinct Because It Was Performed By A Different Practitioner, and 
+XU|Unusual Non-Overlapping Service, The Use Of A Service That Is Distinct Because It Does Not Overlap Usual Components Of The Main Service.
+ZA|(Anesthesia modifier especially used for Medi-cal insurance of California) denotes prone position or surgical field avoidance. To be used only for procedures that have a base value of three (3) units. These techniques are included in the anesthesia base value of surgical procedures with a base value of more than three.
+ZE|(Anesthesia modifier especially used for Medi-cal insurance of California) To be billed with the appropriate five-digit CPT-4 anesthesia code to identify a normal, uncomplicated anesthesia provided by a Certified Registered Nurse Anesthetist (CRNA).

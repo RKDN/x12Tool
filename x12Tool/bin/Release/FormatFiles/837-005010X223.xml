@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FormatGuide>
+  <Loop id='ST' name='837I'>
+    <Segment id='BHT' usage='R' repeat='1' />
+    <Loop name='Submitter Name' id='NM1' s1='41' loopid='1000A' usage='R' repeat='1'>
+      <Segment id='PER' usage='R' repeat='1' />
+    </Loop>
+    <Loop name='Receiver Name' id='NM1' s1='40' loopid='1000B'  usage='R' repeat='1' />
+    <HLoop name='BilingProvider' id='HL' level='20' loopid='2000A' usage='R' repeat='-1'>
+      <Segment id='PRV' s1='BI' usage='S' repeat='1' />
+      <Segment id='CUR' s1='85' usage='S' repeat='1' />
+      <Loop name='Billing Provider Name' id='NM1' s1='85' loopid='2010AA' usage='R' repeat='1'>
+        <Segment id='N3' usage='R' repeat='1' />
+        <Segment id='N4' usage='R' repeat='1' />
+        <Segment id='REF' s1='EI' usage='R' repeat='1' />
+        <Segment id='REF' s1='0B' usage='S' repeat='1' />
+        <Segment id='PER' s1='IC' usage='S' repeat='1' />
+      </Loop>
+      <Loop name='Pay To Address Name' id='NM1' s1='87' loopid='2010AB' usage='S' repeat='1'>
+        <Segment id='N3' usage='R' repeat='1' />
+        <Segment id='N4' usage='R' repeat='1' />
+      </Loop>
+      <Loop name='Pay To Plan Name' id='NM1' s1='PE' loopid='2010AC' usage='S' repeat='1'>
+        <Segment id='N3' usage='R' repeat='1' />
+        <Segment id='N4' usage='R' repeat='1' />
+        <Segment id='REF' s1='2U' usage='S' repeat='1' />
+        <Segment id='REF' s1='EI' usage='R' repeat='1' />
+      </Loop>
+      <HLoop name='Subscriber Hierarchial Level' id='HL' level='22' loopid='2000B' usage='R' repeat='-1'>
+        <Segment id='SBR' usage='R' repeat='1' />
+        <Loop name='Subscriber Name' id='NM1' s1='IL' loopid='2010BA' repeat='1'>
+          <Segment id='N3' usage='S' repeat='1' />
+          <Segment id='N4' usage='R' repeat='1' />
+          <Segment id='DMG' s1='D8' usage='S' repeat='1' />
+          <Segment id='REF' s1='SY' usage='S' repeat='1' />
+          <Segment id='REF' s1='Y4' usage='S' repeat='1' />
+        </Loop>
+        <Loop name='Payer Name' id='NM1' s1='PR' loopid='2010BB' usage='R' repeat='1'>
+          <Segment id='N3' usage='S' repeat='1' />
+          <Segment id='N4' usage='R' repeat='1' />
+          <Segment id='REF' s1='FY' usage='S' repeat='3' />
+          <Segment id='REF' s1='G2' usage='S' repeat='1' />
+        </Loop>
+        <HLoop name='Patient Hierarchial Level' id='HL' level='23' loopid='2000C' usage='S' repeat='-1'>
+          <Segment id='PAT' usage='R' repeat='1' />
+          <Loop name='Patient Name' id='NM1' s1='QC' loopid='2010CA' usage='R' repeat='1'>
+            <Segment id='N3' usage='R' repeat='1' />
+            <Segment id='N4' usage='R' repeat='1' />
+            <Segment id='REF' s1='Y4' usage='S' repeat='1' />
+            <Segment id='DMG' s1='D8' usage='R' repeat='1' />
+          </Loop>
+        </HLoop>
+        <Loop name='Claim Information' id='CLM' loopid='2300' usage='R' repeat='100'>
+          <Segment id='DTP' s1='096' usage='S' repeat='1' />
+          <Segment id='DTP' s1='434' usage='S' repeat='1' />
+          <Segment id='DTP' s1='435' usage='S' repeat='1' />
+          <Segment id='DTP' s1='050' usage='S' repeat='1' />
+          <Segment id='CL1' usage='R' repeat='1' />
+          <Segment id='PWK' usage='S' repeat='10' />
+          <Segment id='CN1' usage='S' repeat='1' />
+          <Segment id='AMT' s1='F3' usage='S' repeat='1' />
+          <Segment id='REF' s1='4N' usage='S' repeat='1' />
+          <Segment id='REF' s1='9F' usage='S' repeat='1' />
+          <Segment id='REF' s1='G1' usage='S' repeat='1' />
+          <Segment id='REF' s1='F8' usage='S' repeat='1' />
+          <Segment id='REF' s1='9A' usage='S' repeat='1' />
+          <Segment id='REF' s1='9C' usage='S' repeat='1' />
+          <Segment id='REF' s1='LX' usage='S' repeat='1' />
+          <Segment id='REF' s1='D9' usage='S' repeat='1' />
+          <Segment id='REF' s1='LU' usage='S' repeat='1' />
+          <Segment id='REF' s1='EA' usage='S' repeat='1' />
+          <Segment id='REF' s1='P4' usage='S' repeat='1' />
+          <Segment id='REF' s1='G4' usage='S' repeat='1' />
+          <Segment id='K3' usage='S' repeat='10' />
+          <Segment id='NTE' s1='NTR' usage='S' repeat='10' />
+          <Segment id='NTE' s1='ADD' usage='S' repeat='1' />
+          <Segment id='CRC' s1='ZZ' usage='S' repeat='1' />
+          <Segment id='HI' usage='R' repeat='-1' />
+          <Segment id='HCP' usage='S' repeat='1' />
+          <Loop name='Attending Provider Name' id='NM1' s1='71' loopid='2310A' usage='S' repeat='1'>
+            <Segment id='PRV' s1='AT' usage='S' repeat='1' />
+            <Segment id='REF' s1='1G' usage='S' repeat='4' />
+          </Loop>
+          <Loop name='Operating Physician Name' id='NM1' s1='72' loopid='2310B' usage='S' repeat='1'>
+            <Segment id='REF' s1='1G' usage='S' repeat='4' />
+          </Loop>
+          <Loop name='Other Operating Physician Name' id='NM1' s1='ZZ' loopid='2310C' usage='S' repeat='1'>
+            <Segment id='REF' s1='1G' usage='S' repeat='4' />
+          </Loop>
+          <Loop name='Rendering Provider Name' id='NM1' s1='82' loopid='2310D' usage='S' repeat='1'>
+            <Segment id='REF' s1='1G' usage='S' repeat='4' />
+          </Loop>
+          <Loop name='Service Facility Location Name' id='NM1' s1='77' loopid='2310E' usage='S' repeat='1'>
+            <Segment id='N3' usage='R' repeat='1' />
+            <Segment id='N4' usage='R' repeat='1' />
+            <Segment id='REF' usage='S' repeat='3' />
+          </Loop>
+          <Loop name='Referring Provider Name' id='NM1' s1='DN' loopid='2310F' usage='S' repeat='1'>
+            <Segment id='REF' s1='G2' usage='S' repeat='3' />
+          </Loop>
+          <Loop name='Other Subscriber Information' id='SBR' loopid='2320' usage='S' repeat='10'>
+            <Segment id='CAS' usage='S' repeat='5' />
+            <Segment id='AMT' s1='D' usage='S' repeat='1' />
+            <Segment id='AMT' s1='EAF' usage='S' repeat='1' />
+            <Segment id='AMT' s1='A8' usage='S' repeat='1' />
+            <Segment id='OI' usage='R' repeat='1' />
+            <Segment id='MOA' usage='S' repeat='1' />
+            <Segment id='MIA' usage='S' repeat='1' />
+            <Loop name='Other Subscriber Name' id='NM1' s1='IL' loopid='2330A' usage='R' repeat='1'>
+              <Segment id='N3' usage='S' repeat='1' />
+              <Segment id='N4' usage='R' repeat='1' />
+              <Segment id='REF' s1='SY' usage='S' repeat='2' />
+            </Loop>
+            <Loop name='Other Payer Name' id='NM1' s1='PR' loopid='2330B' usage='R' repeat='1'>
+              <Segment id='N3' usage='S' repeat='1' />
+              <Segment id='N4' usage='R' repeat='1' />
+              <Segment id='DTP' s1='573' usage='S' repeat='1' />
+              <Segment id='REF' s1='2U' usage='S' repeat='2' />
+              <Segment id='REF' s1='G1' usage='S' repeat='1' />
+              <Segment id='REF' s1='9F' usage='S' repeat='1' />
+              <Segment id='REF' s1='T4' usage='S' repeat='1' />
+              <Segment id='REF' s1='F8' usage='S' repeat='1' />
+            </Loop>
+            <Loop name='Other Payer Attending Provider' id='NM1' s1='71' loopid='2330C' usage='S' repeat='1'>
+              <Segment id='REF' s1='G2' usage='R' repeat='4' />
+            </Loop>
+            <Loop name='Other Payer Operating Physician' id='NM1' s1='72' loopid='2330D' usage='S' repeat='1'>
+              <Segment id='REF' s1='G2' usage='R' repeat='4' />
+            </Loop>
+            <Loop name='Other Payer Other Operating Physician' id='NM1' s1='ZZ' loopid='2330E' usage='S' repeat='1'>
+              <Segment id='REF' s1='G2' usage='R' />
+            </Loop>
+            <Loop name='Other Payer Service Facility Location' id='NM1' s1='77' loopid='2330F' usage='S' repeat='1'>
+              <Segment id='REF' s1='G2' usage='R' repeat='3' />
+            </Loop>
+            <Loop name='Other Payer Rendering Provider Name' id='NM1' s1='82' loopid='2330G' usage='S' repeat='1'>
+              <Segment id='REF' s1='G2' usage='R' repeat='4' />
+            </Loop>
+            <Loop name='Other Payer Referring Provider' id='NM1' s1='DN' loopid='2330H' usage='S' repeat='1'>
+              <Segment id='REF' s1='G2' usage='R' repeat='3' />
+            </Loop>
+            <Loop name='Other Payer Billing Provider' id='NM1' s1='85' loopid='2330I' usage='S' repeat='1'>
+              <Segment id='REF' s1='G2' usage='R' repeat='2' />
+            </Loop>
+          </Loop>
+          <Loop name='Service Line Number' id='LX' loopid='2400' usage='R' repeat='999'>
+            <Segment id='SV2' usage='R' repeat='1' />
+            <Segment id='PWK' usage='S' repeat='10' />
+            <Segment id='DTP' s1='472' usage='S' repeat='1' />
+            <Segment id='REF' s1='6R' usage='S' repeat='1' />
+            <Segment id='REF' s1='9B' usage='S' repeat='1' />
+            <Segment id='REF' s1='9D' usage='S' repeat='1' />
+            <Segment id='AMT' s1='GT' usage='S' repeat='1' />
+            <Segment id='AMT' s1='N8' usage='S' repeat='1' />
+            <Segment id='NTE' usage='S' repeat='1' />
+            <Segment id='HCP' usage='S' repeat='1' />
+            <Loop name='Drug Identification' id='LIN' loopid='2410' usage='S' repeat='1'>
+              <Segment id='CTP' usage='R' repeat='1' />
+              <Segment id='REF' s1='XZ:VY' usage='S' repeat='1' />
+            </Loop>
+            <Loop name='Operating Physician Name' id='NM1' s1='72' loopid='2420A' usage='S' repeat='1'>
+              <Segment id='REF' s1='G2' usage='S' repeat='20' />
+            </Loop>
+            <Loop name='Other Operating Physician Name' id='NM1' s1='ZZ' loopid='2420B' usage='S' repeat='1'>
+              <Segment id='REF' s1='G2' usage='S' repeat='20' />
+            </Loop>
+            <Loop name='Rendering Provider Name' id='NM1' s1='82' loopid='2420C' usage='S' repeat='1'>
+              <Segment id='REF' s1='G2' usage='S' repeat='20' />
+            </Loop>
+            <Loop name='Referring Provider Name' id='NM1' s1='DN' loopid='2420D' usage='S' repeat='1'>
+              <Segment id='REF' s1='G2' usage='S' repeat='20' />
+            </Loop>
+            <Loop name='LineAdjudicationInformation' id='SVD' loopid='2430' usage='S' repeat='1'>
+              <Segment id='CAS' usage='S' repeat='5' />
+              <Segment id='DTP' s1='573' usage='S' repeat='1' />
+              <Segment id='AMT' s1='EAF' usage='S' repeat='1' />
+            </Loop>
+          </Loop>
+        </Loop>
+      </HLoop>
+    </HLoop>
+    <Loop id='SE' usage='R' />
+  </Loop>
+</FormatGuide>

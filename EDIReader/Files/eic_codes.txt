@@ -1,0 +1,14 @@
+40|Receiver
+41|Submitter
+71|Attending Physician
+72|Operating Physician
+73|Other Physician
+77|Service Location
+82|Rendering Provider
+85|Billing Provider
+87|Pay-to Provider
+DN|Referring Provider
+IL|Insured or Subscriber
+MSC|Mammography Screening Center
+PR|Payer
+QC|Patient

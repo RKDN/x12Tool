@@ -1,0 +1,5 @@
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\EDIReader\bin\Debug\EDIReader.dll
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\EDIReader\bin\Debug\EDIReader.pdb
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\EDIReader\obj\Debug\EDIReader.dll
+C:\Users\dcv3016\documents\visual studio 2012\Projects\EDIReader\EDIReader\obj\Debug\EDIReader.pdb
+C:\Users\dcv3016\Documents\Visual Studio 2012\Projects\EDIReader\EDIReader\obj\Debug\EDIReader.csprojResolveAssemblyReference.cache

@@ -1,0 +1,24 @@
+﻿ISA:Author Info Qualifier,Author Information,Security Info Qualifier,Security Information,Interchange ID Qualifier,Interchange Sender ID,Interchange ID Qualifier,Interchange Receiver ID,Interchange Date,Interchange Time,Repetition Seperator,Interchange Control Version Number,Interchange Control Number,Ack Requested,Usage Indicator,Component Element Seperator
+GS:Functional ID Code,Application Send's Code, Application Rec's Code,Date,Time,Group Control Number,Responsible Agency Code,Ver/Release ID Code
+ST:TS ID Code,TS Control Number,Impemtation Convention Reference
+BHT:Hierarchial Structure Code,TS Purpose Code,Reference Identifier,Date,Time,Transaction Type Code
+NM1:Entity ID Code,Entity Type Qualifier,Name Last/Org Name,Name First,Name Middle,Name Prefix,Name Suffix,ID Code Qualifier,ID Code,Entity Relationship Code,Entity ID Code,Name Last/Org Name
+PER:Contact Function Code,Name,Communication Number Qualifier,Communication Number,Communication Number Qualifier,Communication Number,Communication Number Qualifier,Communication Number,Contact Inquiry Reference
+HL:Hierarchical ID Number,Hierarchical Parent ID Number,Hierarchial Level Code,Hierarchial Child Code
+PRV:Provider Code,Reference Identification Qualifier,Reference Identification, State or Province Code,Provider Specialty Information,Provider Organization Code
+CUR:Entity ID Code,Currency Code,Exchange Rate,Entity ID Code,Currency Code,Currency Market/Exchange Code,Date/Time Qualifier,Date,Time,Date/Time Qualifier,Date,Time,Date/Time Qualifier,Date,Time,Date/Time Qualifier,Date,Time,Date/Time Qualifier,Date,Time
+N3:Address Information,Address Information
+N4:City Name,State or Provence Code,Postal Code,Country Code,Location Qualifier,Location Identifier,Country Subdivision Code
+REF:Reference Identification Qualifier,Reference Identification,Description,Reference Identifier
+SBR:Payer Response Sequence Number Code,Individual Relationship Code,Reference Identifier,Name, Insurance Type Code,Benefits Coordination Code,Yes/No Condition Response Code,Employment Status Code,Claim Filing Indicator Code
+DMG:Date Time Format Qualifier,Date Time Period, Gender Code,Marital Status Code,Composite Race or Ethnicity Information,Citizenship Status Code,Country Code,Basis of Verification Code,Quantity,Code List Qualifier Code,Industry Code
+PAT:Individual Relationship Code,Patient Location Code,Employment Status Code,Student Status Code,Date Time Period Format Qualifier,Date Time Period,Unit or Basis for Measurement Code,Weight,Yes/No Condition or Response Code
+CLM:Claim Submitter Identifier,Monetary Amount,Claim Filing Indicator,Non-Institutional Claim Type Code,Health Care Service Location Information,Facility Code Value,Facility Code Qualifier,Claim Frequency Type Code,Yes/No Condition or Response Code,Provider Accept Assignment Code,Yes/No Condition or Response Code,Release of Information Code,Patient Signature Source Code,Related Causes Information,Special Program Code,Yes/No Condition or Response Code,Provider Agreement Code, Claim Status Code,Yes/No Condition or Response Code,Claim Submission Reason Code,Delay Reason Code
+DTP:Date/Time Qualifier,Date Time Format Qualifier,Date Time Period
+AMT:Amount Qualifier Code, Monetary Amount, Credit/Debit Flag Code
+CL1:Admission Type Code,Admission Source Code,Patient Status Code,Nurse Home Status Code
+PWK:Report Type Code,Report Transmission Code,Report Copies Needed,Entity ID Code,ID Code Qualifier,ID Code,Description,Actions Indicated,Request Category Code
+K3:Fixed Format Information,Record Format Code,Composite Unit of Measure
+NTE:NoteReference Code,Description
+CRC:Code Category,Yes/No Condition Response Code,Certificate Condition Code,Certificate Condition Code,Certificate Condition Code,Certificate Condition Code,Certificate Condition Code
+HI:Health Care Code Info,Health Care Code Info,Health Care Code Info,Health Care Code Info,Health Care Code Info,Health Care Code Info,Health Care Code Info,Health Care Code Info,Health Care Code Info,Health Care Code Info,Health Care Code Info,Health Care Code Info

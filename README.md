@@ -8,5 +8,5 @@ Currently, support for 835, 820, and 837 formats has been added.
 
 <p align="center">
   <img src="https://github.com/RKDN/x12Tool/blob/master/Screenshot.png" alt="Application Screenshot"
-       width="654" height="450">
+       width="654" height="350">
 </p>
